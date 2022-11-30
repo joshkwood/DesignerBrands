@@ -5,7 +5,7 @@
 The application takes a file path as a command-line argument. 
 * **Note: This applicaiton reads the command-line argument *relative* to the current user's directory.**
 ### Tech Stack
-This project is written in C# using .NET 6. As a compiled language, I have included versions of this program that target MacOS, Linux, and Windows. 
+This project is written in C# using .NET 6. As a compiled language, I have included versions of this program that target MacOS and Windows. 
 * Please make sure you are using the version that matches your operating system.
 
 The application's data is stored in memory during processing. Nothing is saved to a database or persisted beyond runtime.
@@ -71,7 +71,7 @@ For example, on MacOS the input would be as follows:
 
     ./DesignerBrands Desktop/data.txt
 
-This command works on MacOS, Linux, and using a bash based terminal in Windows (like GitBash). I have not tested the commands needed to use Powershell or Command Prompt in Windows.     
+This command works on MacOS and using a bash based terminal in Windows (like GitBash). I have not tested the commands needed to use Powershell or Command Prompt in Windows.     
 ### Data.txt Output
 Using the included Data.txt information, the application outputs:
 
