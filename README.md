@@ -33,9 +33,8 @@ The logic for the application is broken into three classes:
 1. `FileAccess.cs` is called from Program.cs where it is passed the command-line argument. This class parses the data file and saves the information in the previously discussed data models. 
 1. `RunReport.cs` is called once FileAccess has parsed the data file. Program.cs passes the file information to RunReport.cs for processing and report printing.
 
-I decided to structure the application this way to separate concerns. Program.cs is only responsible for running the needed code and passing needed parameters. FileAccess is the only place to directly act on the file specified at runtime. RunReport is only responsible for processing the data to print the report. 
+This application structure would allow for expansion and refinement in the future, while separating concerns. Program.cs is only responsible for running the needed code and passing needed parameters. FileAccess is the only place to directly act on the file specified at runtime. RunReport is only responsible for processing the data to print the report. 
 
-This application structure would allow for expansion and refinement in the future, while 
 #### Program.CS
     public class Program
     {
